@@ -1,1 +1,3 @@
 ## Sarah Helen Fox Senior Project Resources
+
+Joe will add brillian content here soon...
