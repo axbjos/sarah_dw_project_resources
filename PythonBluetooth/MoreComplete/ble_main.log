@@ -344,3 +344,5 @@
 13:57:13 INFO:areq: Converted Fahrenheit Temp: 59.0
 13:57:14 INFO:areq: Raw Arduino Data: 15
 13:57:14 INFO:areq: Converted Fahrenheit Temp: 59.0
+13:57:25 INFO:areq: Raw Arduino Data: 17
+13:57:25 INFO:areq: Converted Fahrenheit Temp: 62.6
