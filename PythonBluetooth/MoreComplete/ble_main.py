@@ -67,10 +67,12 @@ async def read_ble(address, characteristic_id):
 
         return arduino_fahrenheit
 
-def publish_mqtt_data(temperature, broker_ip):
+def publish_mqtt_data(temperature_ip, broker_ip):
 
-    publish.single("bluetooth", payload=temperature, hostname=broker_ip)
+    # temperature will be sent by gateway as JSON to MQTT
+    publish.single("bluetooth", payload=temperature_ip, hostname=broker_ip)
     logger.info("Temperature published to MQTT at 192.168.68.70")
+    logger.info("Temperature JSON published was: %s", temperature_ip)
 
 async def main():
     
@@ -80,7 +82,8 @@ async def main():
        temperature = await read_ble(ble_address, characteristic_id)
 
        #publish data to mqtt
-       publish_mqtt_data(temperature, mqtt_broker_ip)
+       temperature_json = '{"sensor":"sensor1","value_type":"temperature","value_data":' + str(temperature) +'}'
+       publish_mqtt_data(temperature_json, mqtt_broker_ip)
 
        await asyncio.sleep(5)
 
