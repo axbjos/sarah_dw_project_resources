@@ -1,3 +1,4 @@
 *.log
 .DS_Store
 PythonBluetooth/MoreComplete/ble_main.log
+.DS_Store
