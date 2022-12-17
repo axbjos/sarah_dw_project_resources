@@ -11,23 +11,31 @@ import asyncio
 from bleak import BleakClient
 import logging
 import paho.mqtt.publish as publish
-#import sys #only needed if streaming logs to the console
 
-#### program startup stuff ####
-# use the built-in python logging framework
-# code below will send logging data a file named ble_main.log in the 
-# directory as the code
+'''
+Program Startup Stuff
+
+Use the built-in python logging framework
+Code below will send logging data a file named ble_main.log in the 
+Directory as the code.  monitor is using:  tail -f ble_main.log
+'''
 logging.basicConfig(
     format="%(asctime)s %(levelname)s:%(name)s: %(message)s",
     level=logging.INFO,  #set logging level, set to DEBUG if you want more
     datefmt="%H:%M:%S",
-    #stream=sys.stderr, #use this if you just want logs sent to console
+    #stream=sys.stderr, #use this if you just want logs sent to console, you'll need to 'import sys' too
     filename='ble_main.log',  #use this if you want logs sent to file.
 )
 logger = logging.getLogger("areq")
 logging.getLogger("chardet.charsetprober").disabled = True
 
-### read config file
+'''
+Read the ble_main.conf file
+Put configuration stuff into a config file
+That way IP address changes, UUID changes, etc. aren't in your code
+Config items shouldn't require a code change - potentially introducing errors
+Python has a config parser framework like the logging framework, going old school just using file ops
+'''
 config_file = open("ble_main.conf", "r")
 
 first_line = config_file.readline().split(":")
