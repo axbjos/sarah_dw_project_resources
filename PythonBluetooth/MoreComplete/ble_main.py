@@ -60,8 +60,10 @@ async def read_ble(address, characteristic_id):
         data = await client.read_gatt_char(characteristic_id)
         # data read from the bluetooth connection is going to return a byte array of hex
         # so take this data, decode as hex, then convert to an integer
-        arduino_raw_value = int(data.hex(),16)  #hex value
-        arduino_fahrenheit = (arduino_raw_value*9.0/5.0)+32   #fahrenheit integer
+        arduino_raw_value = int(data.hex(),16)
+        # convert to fahrenheit (Celsius * 9/5) + 32
+        # temp seems to run a little low, might need more than 32
+        arduino_fahrenheit = (arduino_raw_value*9.0/5.0)+32 
         logger.debug("Raw Arduino Data: %s", arduino_raw_value)  #log hex value as a "debug" thing
         logger.info("Converted Fahrenheit Temp: %s", arduino_fahrenheit)  #log fahrenheit as "info" thing
 
