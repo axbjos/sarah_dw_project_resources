@@ -398,3 +398,24 @@
 14:02:42 INFO:areq: Converted Fahrenheit Temp: 60.8
 14:02:58 INFO:areq: Raw Arduino Data: 16
 14:02:58 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:20:09 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:20:09 INFO:areq: Temperature published to MQTT at 192.168.68.70
+14:20:24 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:20:24 INFO:areq: Temperature published to MQTT at 192.168.68.70
+14:26:32 INFO:areq: BLE address is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:26:32 INFO:areq: Characterisic UUID is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:26:32 INFO:areq: MQTT Broker IP is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:28:00 INFO:areq: BLE address is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:28:00 INFO:areq: Characterisic UUID is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:28:00 INFO:areq: MQTT Broker IP is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:29:15 INFO:areq: BLE address is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:29:15 INFO:areq: Characterisic UUID is 00002101-0000-1000-8000-00805f9b34fb
+14:29:15 INFO:areq: MQTT Broker IP is 192.168.68.7
+14:29:25 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:31:40 INFO:areq: BLE address is 106C2542-49BA-1830-96E4-52DE905C54BF
+14:31:40 INFO:areq: Characterisic UUID is 00002101-0000-1000-8000-00805f9b34fb
+14:31:40 INFO:areq: MQTT Broker IP is 192.168.68.70
+14:31:50 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:31:50 INFO:areq: Temperature published to MQTT at 192.168.68.70
+14:32:06 INFO:areq: Converted Fahrenheit Temp: 62.6
+14:32:06 INFO:areq: Temperature published to MQTT at 192.168.68.70
