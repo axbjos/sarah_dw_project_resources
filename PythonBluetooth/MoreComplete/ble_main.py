@@ -48,6 +48,6 @@ async def main():
        #publish data to mqtt
        publish_mqtt_data(temperature)
 
-       asyncio.sleep(5)
+       await asyncio.sleep(5)
 
 asyncio.run(main())
