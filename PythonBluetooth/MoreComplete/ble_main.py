@@ -38,11 +38,11 @@ Python has a config parser framework like the logging framework, going old schoo
 '''
 config_file = open("ble_main.conf", "r")
 
-first_line = config_file.readline().split(":")
+first_line = config_file.readline().split(" ")
 ble_address = first_line[1][:-1]
 logger.info("BLE address is %s", ble_address)
 
-second_line = config_file.readline().split(":")
+second_line = config_file.readline().split(" ")
 characteristic_id = second_line[1][:-1]
 logger.info("Characterisic UUID is %s",characteristic_id)
 
