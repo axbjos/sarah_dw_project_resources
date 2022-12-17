@@ -437,3 +437,5 @@
 14:34:12 INFO:areq: Temperature published to MQTT at 192.168.68.70
 14:34:28 INFO:areq: Converted Fahrenheit Temp: 62.6
 14:34:28 INFO:areq: Temperature published to MQTT at 192.168.68.70
+14:34:43 INFO:areq: Converted Fahrenheit Temp: 60.8
+14:34:43 INFO:areq: Temperature published to MQTT at 192.168.68.70
