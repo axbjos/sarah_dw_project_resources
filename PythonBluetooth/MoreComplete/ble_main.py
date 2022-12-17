@@ -46,7 +46,7 @@ second_line = config_file.readline().split(":")
 characteristic_id = second_line[1][:-1]
 logger.info("Characterisic UUID is %s",characteristic_id)
 
-third_line = config_file.readline().split(":")
+third_line = config_file.readline().split(" ")
 mqtt_broker_ip = third_line[1][:-1]
 logger.info("MQTT Broker IP is %s",mqtt_broker_ip)
 
