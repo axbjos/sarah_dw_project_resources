@@ -44,6 +44,6 @@ while (central.connected()) {
 }
 }
 digitalWrite(LED_BUILTIN, LOW);
-//Serial.print("Disconnected from central: ");
-//Serial.println(central.address());
+Serial.print("Disconnected from central: ");
+Serial.println(central.address());
 }
